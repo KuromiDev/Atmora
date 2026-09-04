@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "atmora",
+	"version": "${version}",
+	"name": "atmora",
+	"description": "Simple Skyblock Mod",
+	"authors": [
+		"Phendorana"
+	],
+	"contact": {
+		"homepage": "https://alicedevelopments.com",
+		"sources": "https://github.com/KuromiDev"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/atmora/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.phendorana.atmora.Atmora"
+		],
+		"client": [
+			"com.phendorana.atmora.AtmoraClient"
+		],
+		"fabric-datagen": [
+			"com.phendorana.atmora.AtmoraDataGenerator"
+		]
+	},
+	"mixins": [
+		"atmora.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+
+	"client": [
+		"com.phendorana.atmora.AtmoraClient"
+	]
+
+}
